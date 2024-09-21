@@ -1,0 +1,58 @@
+
+.quiz-problem {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  animation: quiz-fade-in 1s;
+  align-items: center;
+
+  p {
+    font-size: 1.1rem;
+    color: var(--primary-color);
+  }
+
+  .quiz-problem-choices {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+    button { 
+      width: 50%;
+      padding: 0.25rem;
+      border: 3px solid black;
+      border-radius: 5px;
+      background: var(--primary-color);
+      color: var(--secondary-color);
+      font-size: 1.1rem;
+
+      &:hover,
+      &:active, {
+      color: var(--primary-color);
+      background: var(--secondary-color);
+
+      }
+    }
+
+    .quiz-problem-choice-wrong {
+      animation: quiz-choice-shake 0.2s 2 linear;
+      background: red;
+    }
+  }
+}
+
+@keyframes quiz-fade-in {
+  0% { opacity: 0 }
+  100% { opacity: 100; }
+}
+
+@keyframes quiz-choice-shake {
+  0% { transform: translateX(0pz); }
+  25% { transform: translateX(-10px); }
+  50% { transform: translateX(0px); }
+  75% { transform: translateX(10px); }
+  100% { transform: translateY(0px); }
+}
