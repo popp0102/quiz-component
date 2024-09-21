@@ -28,13 +28,6 @@
       background: var(--primary-color);
       color: var(--secondary-color);
       font-size: 1.1rem;
-
-      &:hover,
-      &:active, {
-      color: var(--primary-color);
-      background: var(--secondary-color);
-
-      }
     }
 
     .quiz-problem-choice-wrong {
