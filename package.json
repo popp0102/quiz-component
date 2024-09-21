@@ -1,6 +1,6 @@
 {
   "name": "@popp0102/quiz-component",
-  "version": "0.9.99",
+  "version": "1.0.0",
   "type": "module",
   "main": "dist/quiz-component.js",
   "files": [ "dist" ],
